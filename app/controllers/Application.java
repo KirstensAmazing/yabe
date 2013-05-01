@@ -20,5 +20,8 @@ public class Application extends Controller {
         ).from(1).fetch(10);
         render(frontPost, olderPosts);
     }
- 
+    public static void show(Long id) {
+        Post post = Post.findById(id);
+        render(post);
+    }
 }
