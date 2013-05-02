@@ -1,0 +1,1 @@
+web: play run --%prod -Dhttp.port=${PORT} ${JAVA_OPTS}
